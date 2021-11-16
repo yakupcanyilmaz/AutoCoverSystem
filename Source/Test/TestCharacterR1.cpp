@@ -381,7 +381,7 @@ void ATestCharacterR1::FinishVault()
 void ATestCharacterR1::InterpCapsuleHalfHeight(float DeltaTime)
 {
 	float TargetCapsuleHalfHeight{};
-	if (bIsCovered || bSliding)
+	if (bIsCovered || bSliding || bVaulting)
 	{
 		TargetCapsuleHalfHeight = CrouchingCapsuleHalfHeight;
 	}
